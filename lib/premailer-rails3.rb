@@ -3,4 +3,4 @@ require 'hpricot'
 require 'premailer-rails3/premailer'
 require 'premailer-rails3/hook'
 
-ActionMailer::Base.register_interceptor(PremailerRails::Hook)
+Mail.register_interceptor(PremailerRails::Hook)
